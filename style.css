@@ -1,0 +1,23 @@
+:root {
+  --background-color-body: #eee;
+  --background-color-cards: #fff;
+  --background-color-card-one: #E8655A;
+  --background-color-card-two: #691000;
+  --border-style-card: 1px solid #999;
+  --box-shadow-card: 1px 1px 2px gray;
+}
+
+body {
+  background-color: var(--background-color-body);
+}
+
+.card {
+  margin: 2px;
+  width: 100px;
+  height: 150px;
+  border: var(--border-style-card);
+  box-shadow: var(--box-shadow-card);
+  background-color: var(--background-color-cards);
+  display: inline-block;
+  border-radius: 3%;
+}
