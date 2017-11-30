@@ -13,7 +13,7 @@ body {
   background-color: var(--background-color-body);
 }
 
-.div-container {
+.card-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
