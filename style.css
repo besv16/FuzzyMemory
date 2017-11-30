@@ -13,6 +13,12 @@ body {
   background-color: var(--background-color-body);
 }
 
+.div-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
 .card {
   margin: 2px;
   width: 100px;
