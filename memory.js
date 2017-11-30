@@ -59,7 +59,10 @@ all_cards.forEach(function(card) {
 
 });
 
+let all_cards_test = [document.querySelectorAll(".card")];
 let restart = document.querySelector(".restart");
-restart.addEventListener('click', function(event) {
-  
-});
+
+// SHUFFLA KORTEN
+// restart.addEventListener('click', function(event) {
+//   all_cards_test.sort(function() { return 0.5 - Math.random() });
+// });
