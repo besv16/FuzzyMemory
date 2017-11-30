@@ -13,7 +13,7 @@ body {
 
 .card-container {
   margin: 0 auto;
-  width: 866px;
+  width: 55%;
   flex-flow: row wrap;
   display: flex;
   flex-direction: row;

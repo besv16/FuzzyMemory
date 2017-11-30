@@ -58,3 +58,8 @@ all_cards.forEach(function(card) {
   });
 
 });
+
+let restart = document.querySelector(".restart");
+restart.addEventListener('click', function(event) {
+  
+});
