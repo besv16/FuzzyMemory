@@ -1,18 +1,22 @@
-const cards_id_one = document.querySelectorAll('.one');
-const cards_id_two = document.querySelectorAll('.two');
+let all_cards = document.querySelectorAll('.card');
+console.log(all_cards);
 
-cards_id_one.forEach(function(card_id_one) {
-  console.log(card_id_one);
-  card_id_one.addEventListener('click', function(event) {
-    card_id_one.style.backgroundColor = "red";
-    alert("You clicked number 1");
-  });
-});
+all_cards.forEach(function(card) {
 
-cards_id_two.forEach(function(card_id_two) {
-  console.log(card_id_two);
-  card_id_two.addEventListener('click', function(event) {
-    card_id_one.style.backgroundColor = "red";
-    alert("You clicked number 2");
+  console.log('card id: ' + card.dataset.id);
+
+  card.addEventListener('click', function(event) {
+
+    if (card.dataset.id == 1) {
+      card.style.backgroundColor = "#E8655A";
+      alert("You clicked a card with ID 1");
+    }
+
+    if (card.dataset.id == 2) {
+      card.style.backgroundColor = "#691000";
+      alert("You clicked a card with ID 2");
+    }
+
   });
+
 });
