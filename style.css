@@ -1,8 +1,6 @@
 :root {
   --background-color-body: #eee;
   --background-color-cards: #fff;
-  /*--background-color-card-one: #E8655A;
-  --background-color-card-two: #691000;*/
   --border-style: 1px solid #999;
   --border-radius: 3%;
   --box-shadow: 1px 1px 2px gray;
@@ -14,6 +12,9 @@ body {
 }
 
 .card-container {
+  margin: 0 auto;
+  width: 866px;
+  flex-flow: row wrap;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -42,4 +43,8 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.fail {
+  background-color: var(--background-color-cards);
 }
