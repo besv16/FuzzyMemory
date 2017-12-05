@@ -63,29 +63,37 @@ all_cards.forEach(function(card) {
 let all_cards_test = [document.querySelectorAll(".card")];
 let restart = document.querySelector(".restart");
 
-let newArray = [];
+let allCards = [];
 
 let nodeList = document.querySelectorAll('.card-container .card');
 nodeList.forEach(function(card) {
-  newArray.push(card);
+  allCards.push(card);
 });
 
-console.log(newArray);
+console.log(allCards);
 
-function shuffle(newArray) {
-  var m = newArray.length, t, i;
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
 
-  // While there remain elements to shuffle…
-  while (m) {
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
 
-    // Pick a remaining element…
-    i = Math.floor(Math.random() * m--);
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
 
     // And swap it with the current element.
-    t = newArray[m];
-    newArray[m] = newArray[i];
-    newArray[i] = t;
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
   }
 
-  return newArray;
+  return array;
 }
+
+// Shuffle card positions when clicking the button
+
+restart.addEventListener('click', function(event) {
+  allCards = shuffle(allCards);
+  console.log(allCards);
+});
