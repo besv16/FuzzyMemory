@@ -41,9 +41,10 @@ all_cards.forEach(function(card) {
     array_compare.push(card);
 
     if (array_compare.length == 2) {
-        if (array_compare[0].dataset.id == array_compare[1].dataset.id) {
+        if (array_compare[0].dataset.id === array_compare[1].dataset.id) {
           console.log("IT'S A MATCH");
         }
+
         else {
           console.log("IT'S NOT A MATCH");
           array_compare.forEach(function(item) {
@@ -62,7 +63,29 @@ all_cards.forEach(function(card) {
 let all_cards_test = [document.querySelectorAll(".card")];
 let restart = document.querySelector(".restart");
 
-// SHUFFLA KORTEN
-// restart.addEventListener('click', function(event) {
-//   all_cards_test.sort(function() { return 0.5 - Math.random() });
-// });
+let newArray = [];
+
+let nodeList = document.querySelectorAll('.card-container .card');
+nodeList.forEach(function(card) {
+  newArray.push(card);
+});
+
+console.log(newArray);
+
+function shuffle(newArray) {
+  var m = newArray.length, t, i;
+
+  // While there remain elements to shuffle…
+  while (m) {
+
+    // Pick a remaining element…
+    i = Math.floor(Math.random() * m--);
+
+    // And swap it with the current element.
+    t = newArray[m];
+    newArray[m] = newArray[i];
+    newArray[i] = t;
+  }
+
+  return newArray;
+}
