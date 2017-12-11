@@ -5,9 +5,9 @@ let array_compare = [];
 
 all_cards.forEach(function(card) {
 
-  array_compare.push(card);
   card.addEventListener('click', function(event) {
 
+    array_compare.push(card);
 
     if (card.dataset.id == 1) {
       card.style.backgroundColor = "#E8655A";
