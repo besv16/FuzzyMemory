@@ -1,11 +1,10 @@
 let all_cards = document.querySelectorAll('.card');
-console.log(all_cards);
 
 let array_compare = [];
 
 all_cards.forEach(function(card) {
 
-  console.log(card);
+  array_compare.push(card);
 
   card.addEventListener('click', function(event) {
 
@@ -41,8 +40,6 @@ all_cards.forEach(function(card) {
       card.style.backgroundColor = "#B2E85A";
     }
 
-    array_compare.push(card);
-
     if (array_compare.length == 2) {
         if (array_compare[0].dataset.id === array_compare[1].dataset.id) {
           console.log("IT'S A MATCH");
@@ -61,7 +58,10 @@ all_cards.forEach(function(card) {
   });
 });
 
+console.log(array_compare);
+
 function shuffle(array) {
+
   var currentIndex = array.length, temporaryValue, randomIndex;
 
   // While there remain elements to shuffle...
@@ -80,6 +80,9 @@ function shuffle(array) {
   return array;
 }
 
-window.addEventListener("load",function () {
-  all_cards = shuffle(all_cards);
+let restart = document.querySelector(".restart");
+
+restart.addEventListener("click",function (event) {
+  array_compare = shuffle(array_compare);
+  console.log(array_compare);
 });
