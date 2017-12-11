@@ -11,7 +11,7 @@ body {
   background-color: var(--background-color-body);
 }
 
-.card-container {
+#card-container {
   margin: 0 auto;
   width: 55%;
   flex-flow: row wrap;

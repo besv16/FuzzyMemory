@@ -1,10 +1,13 @@
 let all_cards = document.querySelectorAll('.card');
+console.log(all_cards);
+
 let array_compare = [];
 
 all_cards.forEach(function(card) {
 
-  card.addEventListener('click', function(event) {
+  console.log(card);
 
+  card.addEventListener('click', function(event) {
 
     if (card.dataset.id == 1) {
       card.style.backgroundColor = "#E8655A";
@@ -50,27 +53,13 @@ all_cards.forEach(function(card) {
           array_compare.forEach(function(item) {
             setTimeout(function() {
               item.style.backgroundColor = "#fff";
-            }, 1000);
+            }, 100);
           });
         }
         array_compare.length = 0;
     }
-
   });
-
 });
-
-let all_cards_test = [document.querySelectorAll(".card")];
-let restart = document.querySelector(".restart");
-
-let allCards = [];
-
-let nodeList = document.querySelectorAll('.card-container .card');
-nodeList.forEach(function(card) {
-  allCards.push(card);
-});
-
-console.log(allCards);
 
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
@@ -91,9 +80,6 @@ function shuffle(array) {
   return array;
 }
 
-// Shuffle card positions when clicking the button
-
-restart.addEventListener('click', function(event) {
-  allCards = shuffle(allCards);
-  console.log(allCards);
+window.addEventListener("load",function () {
+  all_cards = shuffle(all_cards);
 });
