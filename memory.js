@@ -83,8 +83,9 @@ function shuffle(array) {
 let restart = document.querySelector(".restart");
 
 restart.addEventListener("click",function(event) {
-  array_compare = shuffle(array_compare);
-  array_compare.forEach(function(newCard) {
+
+  all_cards = shuffle(all_cards);
+  all_cards.forEach(function(newCard) {
     memoryBoard.appendChild(newCard);
   });
 });
