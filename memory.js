@@ -81,7 +81,6 @@ function shuffle(array) {
 // hämta restart-knappen
 let restart = document.querySelector(".restart");
 
-
 const shuffled = shuffle(Array.from(all_cards));
 console.log(shuffled);
 shuffled.forEach(function(newCard) {
