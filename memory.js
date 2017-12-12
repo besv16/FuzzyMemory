@@ -46,7 +46,7 @@ all_cards.forEach(function(card) {
           array_compare.forEach(function(item) {
             setTimeout(function() {
               item.style.backgroundColor = "#fff";
-            }, 100);
+            }, 700);
           });
         }
         array_compare.length = 0;
@@ -78,7 +78,6 @@ function shuffle(array) {
 let restart = document.querySelector(".restart");
 
 const shuffled = shuffle(Array.from(all_cards));
-console.log(shuffled);
 shuffled.forEach(function(newCard) {
   newCard.style.backgroundColor = "#fff";
   memoryBoard.appendChild(newCard);
@@ -88,7 +87,6 @@ shuffled.forEach(function(newCard) {
 restart.addEventListener("click",function(event) {
   const all_cards = document.querySelectorAll('.card');
   const shuffled = shuffle(Array.from(all_cards));
-  console.log(shuffled);
   shuffled.forEach(function(newCard) {
     newCard.style.backgroundColor = "#fff";
     memoryBoard.appendChild(newCard);
