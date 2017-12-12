@@ -8,37 +8,33 @@ all_cards.forEach(function(card) {
   card.addEventListener('click', function(event) {
 
     array_compare.push(card);
+    console.log(card.dataset.id);
 
-    if (card.dataset.id == 1) {
-      card.style.backgroundColor = "#E8655A";
-    }
-
-    if (card.dataset.id == 2) {
-      card.style.backgroundColor = "#691000";
-    }
-
-    if (card.dataset.id == 3) {
-      card.style.backgroundColor = "#699666";
-    }
-
-    if (card.dataset.id == 4) {
-      card.style.backgroundColor = "#B32C4F";
-    }
-
-    if (card.dataset.id == 5) {
-      card.style.backgroundColor = "#C46FFF";
-    }
-
-    if (card.dataset.id == 6) {
-      card.style.backgroundColor = "#60337D";
-    }
-
-    if (card.dataset.id == 7) {
-      card.style.backgroundColor = "#644F7D";
-    }
-
-    if (card.dataset.id == 8) {
-      card.style.backgroundColor = "#B2E85A";
+    switch (card.dataset.id) {
+      case '1':
+        card.style.backgroundColor = "#E8655A";
+        break;
+      case '2':
+        card.style.backgroundColor = "#691000";
+        break;
+      case '3':
+        card.style.backgroundColor = "#699666";
+        break;
+      case '4':
+        card.style.backgroundColor = "#B32C4F";
+        break;
+      case '5':
+        card.style.backgroundColor = "#C46FFF";
+        break;
+      case '6':
+        card.style.backgroundColor = "#60337D";
+        break;
+      case '7':
+        card.style.backgroundColor = "#644F7D";
+        break;
+      case '8':
+        card.style.backgroundColor = "#B2E85A";
+        break;
     }
 
     if (array_compare.length == 2) {
@@ -78,7 +74,7 @@ function shuffle(array) {
   return array;
 }
 
-// hämta restart-knappen
+// fetch the restart-button from the html document
 let restart = document.querySelector(".restart");
 
 const shuffled = shuffle(Array.from(all_cards));
