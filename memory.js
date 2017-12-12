@@ -1,6 +1,5 @@
 let memoryBoard = document.querySelector("#card-container");
 let all_cards = document.querySelectorAll('.card');
-console.log(all_cards);
 
 let array_compare = [];
 
@@ -59,6 +58,7 @@ all_cards.forEach(function(card) {
   });
 });
 
+// shuffle funktionen
 function shuffle(array) {
 
   var currentIndex = array.length, temporaryValue, randomIndex;
@@ -78,9 +78,10 @@ function shuffle(array) {
   return array;
 }
 
-// hämta restart-knappen och kalla på shuffle-funktionen
+// hämta restart-knappen
 let restart = document.querySelector(".restart");
 
+// när jag klickar på knappen - kalla på shuffle-funktionen
 restart.addEventListener("click",function(event) {
   shuffle(all_cards);
   all_cards.forEach(function(newCard) {
