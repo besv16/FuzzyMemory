@@ -83,9 +83,10 @@ let restart = document.querySelector(".restart");
 
 // när jag klickar på knappen - kalla på shuffle-funktionen
 restart.addEventListener("click",function(event) {
-  shuffle(all_cards);
-  all_cards.forEach(function(newCard) {
+  const all_cards = document.querySelectorAll('.card');
+  const shuffled = shuffle(Array.from(all_cards));
+  console.log(shuffled);
+  shuffled.forEach(function(newCard) {
     memoryBoard.appendChild(newCard);
   });
-  console.log(all_cards);
 });
