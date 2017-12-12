@@ -87,6 +87,7 @@ restart.addEventListener("click",function(event) {
   const shuffled = shuffle(Array.from(all_cards));
   console.log(shuffled);
   shuffled.forEach(function(newCard) {
+    newCard.style.backgroundColor = "#fff";
     memoryBoard.appendChild(newCard);
   });
 });
