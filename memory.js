@@ -12,7 +12,7 @@ all_cards.forEach(function(card) {
 
   /*
   * 1. enable event listener (click) on each card
-  * 2. push the selected cards (card x2) into the array array_compare
+  * 2. push the selected cards (card x2) into the empty array named array_compare
   * 3. remove the background image on selected card
   * 4. based on which dataset-id the card has, change background color.
   */
