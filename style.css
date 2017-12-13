@@ -41,5 +41,5 @@ body {
 }
 
 .fail {
-  background-color: var(--background-color-cards);
+  color: red;
 }

@@ -20,34 +20,35 @@ all_cards.forEach(function(card) {
   card.addEventListener('click', function(event) {
 
     array_compare.push(card);
+
     card.style.backgroundImage = "none";
 
-    switch (card.dataset.id) {
-      case '1':
-        card.style.backgroundColor = "#E8655A";
-        break;
-      case '2':
-        card.style.backgroundColor = "#691000";
-        break;
-      case '3':
-        card.style.backgroundColor = "#699666";
-        break;
-      case '4':
-        card.style.backgroundColor = "#B32C4F";
-        break;
-      case '5':
-        card.style.backgroundColor = "#C46FFF";
-        break;
-      case '6':
-        card.style.backgroundColor = "#60337D";
-        break;
-      case '7':
-        card.style.backgroundColor = "#644F7D";
-        break;
-      case '8':
-        card.style.backgroundColor = "#B2E85A";
-        break;
-    }
+    // switch (card.dataset.id) {
+    //   case '1':
+    //     card.style.backgroundColor = "#E8655A";
+    //     break;
+    //   case '2':
+    //     card.style.backgroundColor = "#691000";
+    //     break;
+    //   case '3':
+    //     card.style.backgroundColor = "#699666";
+    //     break;
+    //   case '4':
+    //     card.style.backgroundColor = "#B32C4F";
+    //     break;
+    //   case '5':
+    //     card.style.backgroundColor = "#C46FFF";
+    //     break;
+    //   case '6':
+    //     card.style.backgroundColor = "#60337D";
+    //     break;
+    //   case '7':
+    //     card.style.backgroundColor = "#644F7D";
+    //     break;
+    //   case '8':
+    //     card.style.backgroundColor = "#B2E85A";
+    //     break;
+    // }
 
     /*
     * 5. check if the array contains two cards, if it does, compare them
@@ -64,7 +65,8 @@ all_cards.forEach(function(card) {
           console.log("IT'S NOT A MATCH");
           array_compare.forEach(function(item) {
             setTimeout(function() {
-              item.style.backgroundImage = "url('img/card_back.jpg')";
+              item.classList.add("card");
+              // item.style.backgroundImage = "url('img/card_back.jpg')";
             }, 700);
           });
         }
