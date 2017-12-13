@@ -9,6 +9,7 @@ all_cards.forEach(function(card) {
 
     array_compare.push(card);
     console.log(card.dataset.id);
+    card.style.backgroundImage = "none";
 
     switch (card.dataset.id) {
       case '1':
@@ -54,28 +55,9 @@ all_cards.forEach(function(card) {
   });
 });
 
-// shuffle funktionen
-function shuffle(array) {
-
-  var currentIndex = array.length, temporaryValue, randomIndex;
-
-  // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
-
-    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-
-    // And swap it with the current element.
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
-  return array;
-}
-
 const shuffled = shuffle(Array.from(all_cards));
 shuffled.forEach(function(newCard) {
-  newCard.style.backgroundColor = "#fff";
+  newCard.style.backgroundColor = "none";
+  newCard.style.backgroundImage = "url('img/card_back.jpg')";
   memoryBoard.appendChild(newCard);
 });
