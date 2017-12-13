@@ -13,10 +13,8 @@ replay.addEventListener("click",function(event) {
   * append the shuffled cards to the memory board
   */
 
-  shuffled.forEach(function(newCard) {
-    newCard.classList.add("flipped");
-    // newCard.style.backgroundImage = "url('img/card_back.jpg')";
-    // newCard.style.removeProperty("background-color");
-    memoryBoard.appendChild(newCard);
+  shuffled.forEach(function(card) {
+    card.classList.add("card");
+    memoryBoard.appendChild(card);
   });
 });
