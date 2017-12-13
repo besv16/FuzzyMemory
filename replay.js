@@ -8,13 +8,12 @@ replay.addEventListener("click",function(event) {
 
   /*
   * loop trough all the shuffled cards
-  * set background image
-  * remove the background color of each card
+  * remove the flipped class of every card (this will show the down-side image instead, like when we start a new game)
   * append the shuffled cards to the memory board
   */
 
   shuffled.forEach(function(card) {
-    card.classList.add("card");
+    card.classList.remove("flipped");
     memoryBoard.appendChild(card);
   });
 });
