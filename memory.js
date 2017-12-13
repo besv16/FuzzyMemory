@@ -22,7 +22,6 @@ all_cards.forEach(function(card) {
     array_compare.push(card);
 
     card.classList.add("flipped");
-    // card.style.backgroundImage = "none";
 
     /*
     * 5. check if the array contains two cards, if it does, compare them
@@ -56,7 +55,5 @@ all_cards.forEach(function(card) {
 
 const shuffled = shuffle(Array.from(all_cards));
 shuffled.forEach(function(newCard) {
-  // newCard.style.backgroundColor = "none";
-  // newCard.style.backgroundImage = "url('img/card_back.jpg')";
   memoryBoard.appendChild(newCard);
 });

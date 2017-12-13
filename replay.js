@@ -14,8 +14,9 @@ replay.addEventListener("click",function(event) {
   */
 
   shuffled.forEach(function(newCard) {
-    newCard.style.backgroundImage = "url('img/card_back.jpg')";
-    newCard.style.removeProperty("background-color");
+    newCard.classList.add("flipped");
+    // newCard.style.backgroundImage = "url('img/card_back.jpg')";
+    // newCard.style.removeProperty("background-color");
     memoryBoard.appendChild(newCard);
   });
 });
