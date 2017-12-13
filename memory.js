@@ -45,7 +45,7 @@ all_cards.forEach(function(card) {
           console.log("IT'S NOT A MATCH");
           array_compare.forEach(function(item) {
             setTimeout(function() {
-              item.style.backgroundColor = "#fff";
+              item.style.backgroundImage = "url('img/card_back.jpg')";
             }, 700);
           });
         }

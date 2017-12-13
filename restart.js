@@ -6,7 +6,7 @@ restart.addEventListener("click",function(event) {
   const all_cards = document.querySelectorAll('.card');
   const shuffled = shuffle(Array.from(all_cards));
   shuffled.forEach(function(newCard) {
-    newCard.style.backgroundColor = "#fff";
+    newCard.classList.add("card");
     memoryBoard.appendChild(newCard);
   });
 });
