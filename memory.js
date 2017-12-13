@@ -24,7 +24,6 @@ all_cards.forEach(function(card) {
     card.style.backgroundImage = "img/" + card.dataset.id +  ".png";
     console.log(card.style.backgroundImage = "url(img/" + card.dataset.id +  ".png)");
     card.style.backgroundSize = "contain";
-    card.style.backgroundPosition = "center";
 
     /*
     * 5. check if the array contains two cards, if it does, compare them
