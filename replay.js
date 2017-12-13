@@ -14,6 +14,7 @@ replay.addEventListener("click",function(event) {
 
   shuffled.forEach(function(card) {
     card.style.backgroundImage = "url(\"img/card_back.jpg\")";
+    card.style.backgroundSize = "cover";
     memoryBoard.appendChild(card);
   });
 });

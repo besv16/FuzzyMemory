@@ -24,6 +24,9 @@ all_cards.forEach(function(card) {
     // card.classList.add("flipped");
     card.style.backgroundImage = "img/" + card.dataset.id +  ".png";
     console.log(card.style.backgroundImage = "url(img/" + card.dataset.id +  ".png)");
+    card.style.backgroundSize = "contain";
+    card.style.backgroundPosition = "center";
+
     /*
     * 5. check if the array contains two cards, if it does, compare them
     * 6. if they match, keep the cards flipped
@@ -40,6 +43,7 @@ all_cards.forEach(function(card) {
           array_compare.forEach(function(item) {
             setTimeout(function() {
               item.style.backgroundImage = "url(\"img/card_back.jpg\")";
+              item.style.backgroundSize = "cover";
             }, 700);
           });
         }
