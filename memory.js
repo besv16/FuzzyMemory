@@ -21,34 +21,8 @@ all_cards.forEach(function(card) {
 
     array_compare.push(card);
 
-    card.style.backgroundImage = "none";
-
-    // switch (card.dataset.id) {
-    //   case '1':
-    //     card.style.backgroundColor = "#E8655A";
-    //     break;
-    //   case '2':
-    //     card.style.backgroundColor = "#691000";
-    //     break;
-    //   case '3':
-    //     card.style.backgroundColor = "#699666";
-    //     break;
-    //   case '4':
-    //     card.style.backgroundColor = "#B32C4F";
-    //     break;
-    //   case '5':
-    //     card.style.backgroundColor = "#C46FFF";
-    //     break;
-    //   case '6':
-    //     card.style.backgroundColor = "#60337D";
-    //     break;
-    //   case '7':
-    //     card.style.backgroundColor = "#644F7D";
-    //     break;
-    //   case '8':
-    //     card.style.backgroundColor = "#B2E85A";
-    //     break;
-    // }
+    card.classList.add("flipped");
+    // card.style.backgroundImage = "none";
 
     /*
     * 5. check if the array contains two cards, if it does, compare them
@@ -65,7 +39,7 @@ all_cards.forEach(function(card) {
           console.log("IT'S NOT A MATCH");
           array_compare.forEach(function(item) {
             setTimeout(function() {
-              item.classList.add("card");
+              item.classList.remove("flipped");
               // item.style.backgroundImage = "url('img/card_back.jpg')";
             }, 700);
           });
@@ -82,7 +56,7 @@ all_cards.forEach(function(card) {
 
 const shuffled = shuffle(Array.from(all_cards));
 shuffled.forEach(function(newCard) {
-  newCard.style.backgroundColor = "none";
-  newCard.style.backgroundImage = "url('img/card_back.jpg')";
+  // newCard.style.backgroundColor = "none";
+  // newCard.style.backgroundImage = "url('img/card_back.jpg')";
   memoryBoard.appendChild(newCard);
 });
