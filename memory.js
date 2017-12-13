@@ -1,12 +1,18 @@
+// fetch the memory board from the DOM
 let memoryBoard = document.querySelector("#card-container");
+
+// fetch the memory board cards from the DOM
 let all_cards = document.querySelectorAll('.card');
 
+// create new empty array
 let array_compare = [];
 
+// loop trough all cards from the DOM
 all_cards.forEach(function(card) {
-
+  /* enable event listener click on each card
+  * 
+  */
   card.addEventListener('click', function(event) {
-
     array_compare.push(card);
     console.log(card.dataset.id);
     card.style.backgroundImage = "none";
