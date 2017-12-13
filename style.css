@@ -1,7 +1,7 @@
 body {
   width: 90%;
   margin: 0 auto;
-  background-image: url("https://i.giphy.com/media/N7ZiLbtDr84Yo/giphy.mp4");
+  /* background-image: url("https://i.giphy.com/media/N7ZiLbtDr84Yo/giphy.mp4"); */
 }
 
 #card-container {
@@ -17,9 +17,6 @@ body {
   margin: 10px;
   width: 100px;
   height: 150px;
-  border: 1px solid #999;
-  border-radius: 3%;
-  box-shadow: 1px 1px 2px gray;
   background-image: url("img/card_back.jpg");
   background-size: cover;
   display: inline-block;
@@ -29,9 +26,6 @@ body {
   margin-left: 18.2%;
   width: 90px;
   height: 60px;
-  border: 1px solid #999;
-  border-radius: 3%;
-  box-shadow: 1px 1px 2px gray;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -40,7 +34,15 @@ body {
   cursor: pointer;
 }
 
+.card, .replay {
+  border: 1px solid #999;
+  border-radius: 3%;
+  box-shadow: 1px 1px 2px gray;
+}
+
 .flipped {
-  background-color: red;
-  background-image: none;
+  /* background-color: red; */
+  background-image: url("img/1.png");
+  background-size: contain;
+  background-position: center;
 }

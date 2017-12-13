@@ -21,8 +21,9 @@ all_cards.forEach(function(card) {
 
     array_compare.push(card);
 
-    card.classList.add("flipped");
-
+    // card.classList.add("flipped");
+    card.style.backgroundImage = "img/" + card.dataset.id +  ".png";
+    console.log(card.style.backgroundImage = "url(img/" + card.dataset.id +  ".png)");
     /*
     * 5. check if the array contains two cards, if it does, compare them
     * 6. if they match, keep the cards flipped
@@ -38,8 +39,7 @@ all_cards.forEach(function(card) {
           console.log("IT'S NOT A MATCH");
           array_compare.forEach(function(item) {
             setTimeout(function() {
-              item.classList.remove("flipped");
-              // item.style.backgroundImage = "url('img/card_back.jpg')";
+              item.style.backgroundImage = "url(\"img/card_back.jpg\")";
             }, 700);
           });
         }

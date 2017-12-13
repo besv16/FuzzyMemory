@@ -13,7 +13,7 @@ replay.addEventListener("click",function(event) {
   */
 
   shuffled.forEach(function(card) {
-    card.classList.remove("flipped");
+    card.style.backgroundImage = "url(\"img/card_back.jpg\")";
     memoryBoard.appendChild(card);
   });
 });
