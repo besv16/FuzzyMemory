@@ -1,16 +1,7 @@
-:root {
-  --background-img-body: url("https://i.giphy.com/media/N7ZiLbtDr84Yo/giphy.mp4");
-  --background-img-cards: url("img/card_back.jpg");
-  --border-style: 1px solid #999;
-  --border-radius: 3%;
-  --box-shadow: 1px 1px 2px gray;
-  --background-color-replay: #fff;
-}
-
 body {
   width: 90%;
   margin: 0 auto;
-  background-image: var(--background-img-body);
+  background-image: url("https://i.giphy.com/media/N7ZiLbtDr84Yo/giphy.mp4");
 }
 
 #card-container {
@@ -26,10 +17,10 @@ body {
   margin: 10px;
   width: 100px;
   height: 150px;
-  border: var(--border-style);
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-  background-image: var(--background-img-cards);
+  border: 1px solid #999;
+  border-radius: 3%;
+  box-shadow: 1px 1px 2px gray;
+  background-image: url("img/card_back.jpg");
   background-size: cover;
   display: inline-block;
 }
@@ -38,10 +29,10 @@ body {
   margin-left: 18.2%;
   width: 90px;
   height: 60px;
-  border: var(--border-style);
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-  background-color: var(--background-color-replay);
+  border: 1px solid #999;
+  border-radius: 3%;
+  box-shadow: 1px 1px 2px gray;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
