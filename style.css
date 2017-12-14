@@ -4,6 +4,13 @@ body {
   background-color: maroon;
 }
 
+.memory-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
 #card-container {
   margin: 0 auto;
   width: 960px;
