@@ -1,7 +1,14 @@
 body {
   width: 100%;
   margin: 0 auto;
+  font-family: Georgia;
   background-color: maroon;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  letter-spacing: 3px;
 }
 
 .memory-container {
