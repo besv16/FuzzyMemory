@@ -20,5 +20,4 @@ Beatrice Svensson - WU17
 
 # Testing classmates
 
-Emma Alborn
-Christoffer Modigsson
+Emma Alborn & Christoffer Modigsson
