@@ -3,14 +3,14 @@ body {
   margin: 0 auto;
 }
 
-#snowfall {
+/* #snowfall {
   width: 100%;
   height: 500px;
   background-image: url("https://media.giphy.com/media/N7ZiLbtDr84Yo/giphy.gif");
   opacity: 0.2;
   background-size: 75%;
   background-position: center;
-}
+} */
 
 #card-container {
   margin: 0 auto;
