@@ -19,3 +19,6 @@ This project is built with HTML, CSS and JavaScript.
 Beatrice Svensson - WU17
 
 # Testing classmates
+
+Emma Alborn
+Christoffer Modigsson
