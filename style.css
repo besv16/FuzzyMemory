@@ -21,23 +21,32 @@ body {
   background-size: cover;
   background-position: center;
   display: inline-block;
+  border-radius: 3%;
+}
+
+.replay-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .replay {
-  margin-left: 18.2%;
-  width: 90px;
+  width: 120px;
   height: 60px;
-  background-color: #fff;
+  background-color: maroon;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border-radius: 50%;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 .card, .replay {
   border: 1px solid red;
-  border-radius: 3%;
   box-shadow: 1px 1px 2px red;
 }
 
