@@ -1,5 +1,5 @@
 body {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -14,7 +14,7 @@ body {
 
 #card-container {
   margin: 0 auto;
-  width: 71.1%;
+  width: 960px;
   flex-flow: row wrap;
   display: flex;
   flex-direction: row;
@@ -47,4 +47,18 @@ body {
   border: 1px solid #999;
   border-radius: 3%;
   box-shadow: 1px 1px 2px gray;
+}
+
+
+
+@media only screen and (max-width: 960px) {
+    #card-container {
+        width: 490px;
+    }
+}
+
+@media only screen and (max-width: 484px) {
+    #card-container {
+        width: 290px;
+    }
 }

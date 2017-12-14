@@ -18,11 +18,8 @@ all_cards.forEach(function(card) {
   */
 
   card.addEventListener('click', function(event) {
-
     array_compare.push(card);
-
-    card.style.backgroundImage = "img/" + card.dataset.id +  ".png";
-    console.log(card.style.backgroundImage = "url(img/" + card.dataset.id +  ".png)");
+    card.style.backgroundImage = "url(img/" + card.dataset.id +  ".png)";
     card.style.backgroundSize = "contain";
 
     /*
@@ -34,10 +31,8 @@ all_cards.forEach(function(card) {
 
     if (array_compare.length == 2) {
         if (array_compare[0].dataset.id === array_compare[1].dataset.id) {
-          console.log("IT'S A MATCH");
         }
         else {
-          console.log("IT'S NOT A MATCH");
           array_compare.forEach(function(item) {
             setTimeout(function() {
               item.style.backgroundImage = "url(\"img/card_back.jpg\")";
